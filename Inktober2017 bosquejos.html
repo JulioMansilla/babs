@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>barbara mansilla is a paper sculpture artist and illustrator</title>
+<meta name="Keywords" content="barbaramansilla,papersculpture,artist,illustrator" />
+
+<script type="text/javascript" src="Scripts/jquery-.min.js"></script>
+<script type="text/javascript" src="Scripts/jquery.cycle.all.js"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(function(){
+			$('#play').click(function(){ $('#slider').cycle('resume'); return false;});
+			$('#pause').click(function(){ $('#slider').cycle('pause'); return false;});	
+	
+	$('#slider').cycle({
+
+			fx:			'scrollHorz',
+			next:		'#next',
+			prev:		'#prev',
+			pager:		'#pager',
+			timeout:     9000,
+			speed:		 900
+			
+			
+	
+	
+	
+	
+	});
+});
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<style type="text/css"> 
+
+
+#hero{
+     width: 874px;
+	 height:567px;
+	 display: block;
+	 position: relative;
+	 margin:auto;
+
+
+
+}
+
+#slider{
+     width: 874px;
+	 height:567px;
+	 display: block;
+	 align: center;
+	 overflow:hidden;
+
+
+
+}
+
+
+
+#pager{
+
+
+       width:100%;
+	   text-align: center;
+	   display: block;
+	   position: absolute;
+	   cursor: pointer;
+	   z-index: 999;
+	   }
+	   
+#pager a  {
+      font-size: .0em;
+	  color: transparent;
+      width: 10px;
+	  height: 10px;
+	  display: inline-block;
+	  position: relative;
+	  border: 1px solid #CC99CC;
+	  border-radius: 20px;
+	  background: transparent;
+	  margin: 10px;
+	  
+}
+
+#pager a.activeSlide{ background:#CC99CC;
+}
+a:link {
+	color: #664D4F;
+}
+a:visited {
+	color: #664D4F;
+}
+
+.style14 {font-family: Georgia, "Times New Roman", Times, serif}
+a:link {
+	color:  #664D4F;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+ 
+#body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background:  #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #FFFFFF;
+	
+}
+
+
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.twoColElsLtHdr #container {
+	width: 1000px;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 10px solid #BCA7A9;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+}
+.twoColElsLtHdr #header {
+	background: #FFFFFF;
+	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColElsLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsLtHdr #sidebar1 p" rule.
+*/
+.twoColElsLtHdr #sidebar1 {
+	float: left;
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsLtHdr #sidebar1 h3, .twoColElsLtHdr #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+
+.twoColElsLtHdr #mainContent {
+	margin: 0 auto;
+	/* the right margin can be given in ems or pixels. It creates the space down the right side of the page. */
+	width: 900px;
+	align:center;
+	padding-left: 0px;
+	border: 1px solid #BCA7A9;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	}
+.twoColElsLtHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD;
+} 
+.twoColElsLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.style11 {font-family: Georgia, "Times New Roman", Times, serif; color: #9E7E81; }
+.style16 {font-family: Georgia, "Times New Roman", Times, serif; color: #BCA7A9; }
+.style17 {color: #541132}
+.style19 {font-family: Georgia, "Times New Roman", Times, serif; color: #664D4F; }
+a:visited {
+	text-decoration: none;
+}
+--> 
+</style>
+
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="twoColElsLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1 align="center"><a href="index.html"><img src="header2.jpg" width="983" height="178" /></a></h1>
+  <!-- end #header --></div>
+  <table width="785" height="27" border="0" align="center" cellpadding="2">
+    <tr>
+      <th width="777" height="23" scope="col"><ul id="MenuBar1" class="MenuBarHorizontal">
+          <li>
+            <div align="center"><a href="main2.html">Inicio</a> </div>
+          </li>
+        <li>
+            <div align="center"><a href="#" class="MenuBarItemSubmenu">Illustraciones </a>
+                <ul>
+                  <li><a href="gallery2.html">Esculturas </a></li>
+                  <li><a href="#" class="MenuBarItemSubmenu">Animaciones </a>
+                      <ul>
+                        <li><a href="animaciones.html">Faucet Attack!</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="sketches2.html">Bosquejos </a></li>
+                  <li><a href="Inktober2017 bosquejos.html">Inktober2017</a></li>
+              </ul>
+            </div>
+        </li>
+        <li>
+            <div align="center"><a href="https://barbaramansilla.wordpress.com/">Blog </a></div>
+        </li>
+        <li>
+            <div align="center"><a href="bio2.html">Bio </a></div>
+        </li>
+        <li>
+            <div align="center"><a href="contact2.html">Contactar </a> </div>
+        </li>
+        <li>
+            <div align="center"><a href="https://www.redbubble.com/people/barbaramansilla">Tienda Virtual </a></div>
+        </li>
+      </ul></th>
+    </tr>
+    </table>
+  <p>&nbsp;</p>
+  <div id="mainContent">
+  
+ <body>
+<p align="center" class="style14">
+
+<p align="center" class="style14"> <div id="hero">
+
+<div id="pager"></div>
+<p>&nbsp;</p>
+<div id="slider">
+
+
+
+<div class="items">
+          <img src="jqueryimages/inktober/scribble monster.jpg"  width="874" height="567" />
+             
+        </div><!--End--Items-->
+             
+           
+                         
+<div class="items">
+            <img src="jqueryimages/inktober/singing monster.jpg"  width="874" height="567" />
+             
+        </div><!--End--Items-->
+
+
+<div class="items">
+
+              <img src="jqueryimages/inktober/cat.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+    
+<div class="items">
+          <img src="jqueryimages/inktober/owl.jpg"  width="874" height="567" />
+             
+        </div><!--End--Items-->
+             
+<div class="items">
+            <img src="jqueryimages/inktober/fire.jpg"  width="874" height="567" />
+             
+        </div><!--End--Items-->
+             
+       
+
+ <div class="items">
+      <img src="jqueryimages/inktober/ice.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+    
+
+ <div class="items">
+      <img src="jqueryimages/inktober/east rock.jpg" width="874" height="567">
+      
+    </div><!--End--Items-->
+       
+
+ <div class="items">
+      <img src="jqueryimages/inktober/mia.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+
+<div class="items">
+      <img src="jqueryimages/inktober/sloth.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+    
+    <div class="items">
+      <img src="jqueryimages/inktober/unicorn.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/expecto patronum.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/skeleton.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/octopus.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+
+<div class="items">
+      <img src="jqueryimages/inktober/skunk.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/bear.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/tree painting.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/flying squirrel.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/Charon.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/Penguin.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+
+<div class="items">
+      <img src="jqueryimages/inktober/Dog.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/Rapping King.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/frilled lizard.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/Mud bath.jpg" width="874" height="567">
+                  
+    </div><!--End--Items-->
+<div class="items">
+      <img src="jqueryimages/inktober/Cat as Kurama.jpg" width="874" height="567">
+                  
+   
+
+</div><!--End--Slider-->
+
+
+
+
+
+</div>
+  <p align="left" class="style14"></p>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+ 
+     </div>
+    
+  <p>
+    <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  </p>
+  <p>&nbsp;</p>
+  <table width="166" border="0" align="center">
+    <tr>
+      <td width="37"><a href="https://www.facebook.com/barbaramansilla.artist"><img src="images/FACEBOOKLOGO.jpg" alt="facebook" width="33" height="33" /></a></td>
+      <td width="37"><a href="https://www.instagram.com/barbaramansillaart/"><img src="images/Instagram.jpg" alt="instagram" width="36" height="35" /></a></td>
+      <td width="38"><a href="http://www.redbubble.com/people/barbaramansilla"><img src="images/redbubble.jpg" alt="redbubble" width="33" height="33" /></a></td>
+      <td width="38"><a href="https://barbaramansilla.wordpress.com/"><img src="images/wordpress-logos-300px-2.jpg" alt="wordpress" width="33" height="33" /></a></td>
+    </tr>
+  </table>
+  <p><br class="clearfloat" />
+      </p>
+<!-- end #container --></div>
+  
+  <p align="left" class="style14"></p>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+ 
+     </div>
+    
+<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+  
+<!-- end #container -->
+</div>
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  </div>
+   
+  
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+ 
+</div>
+    
+<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+  
+<!-- end #container --></div>
+</body>
+</html>

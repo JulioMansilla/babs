@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>barbara mansilla is a paper sculpture artist and illustrator</title>
+<meta name="Keywords" content="barbaramansilla,papersculpture,artist,illustrator" />
+<style type="text/css"> 
+
+
+a:link {
+	color: #664D4F;
+	text-decoration: none;
+}
+a:visited {
+	color: #664D4F;
+	text-decoration: none;
+}
+
+ 
+#body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background:  #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #FFFFFF;
+	
+}
+
+
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.twoColElsLtHdr #container {
+	width: 1000px;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 10px solid #BCA7A9;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+}
+.twoColElsLtHdr #header {
+	background: #FFFFFF;
+	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColElsLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsLtHdr #sidebar1 p" rule.
+*/
+.twoColElsLtHdr #sidebar1 {
+	float: left;
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsLtHdr #sidebar1 h3, .twoColElsLtHdr #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+
+.twoColElsLtHdr #mainContent {
+	margin: 0 auto;
+	/* the right margin can be given in ems or pixels. It creates the space down the right side of the page. */
+	width: 900px;
+	align:center;
+	padding-left: 25px;
+	border: 1px solid #BCA7A9;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	padding-right: 25px;
+	}
+.twoColElsLtHdr #footer { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD;
+} 
+.twoColElsLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.style20 {
+	color: #A07D83
+}
+--> 
+</style>
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="twoColElsLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1 align="center"><a href="index.html"><img src="header2.jpg" width="975" height="177" /></a></h1>
+  <!-- end #header --></div>
+  <table width="785" height="27" border="0" align="center" cellpadding="2">
+    <tr>
+      <th width="777" height="23" scope="col"><ul id="MenuBar1" class="MenuBarHorizontal">
+          <li>
+            <div align="center"><a href="main2.html">Inicio</a> </div>
+          </li>
+        <li>
+            <div align="center"><a href="#" class="MenuBarItemSubmenu">Illustraciones </a>
+                <ul>
+                  <li><a href="gallery2.html">Esculturas </a></li>
+                  <li><a href="#" class="MenuBarItemSubmenu">Animaciones </a>
+                      <ul>
+                        <li><a href="animaciones.html">Faucet Attack!</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="sketches2.html">Bosquejos </a></li>
+                  <li><a href="Inktober2017 bosquejos.html">Inktober2017</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div align="center"><a href="https://barbaramansilla.wordpress.com/">Blog </a></div>
+        </li>
+        <li>
+            <div align="center"><a href="bio2.html">Bio </a></div>
+        </li>
+        <li>
+            <div align="center"><a href="contact2.html">Contactar </a> </div>
+        </li>
+        <li>
+            <div align="center"><a href="https://www.redbubble.com/people/barbaramansilla">Tienda Virtual </a></div>
+        </li>
+      </ul></th>
+    </tr>
+      </table>
+  <p>&nbsp;</p>
+  <div id="mainContent">
+  
+  
+  
+  
+<body>
+
+
+  <h2 class="style20">Bio</h2>
+  <p align="left"><font color="#9E7E81">Barbara Mansilla es una artista que crea esculturas de papel. Recibi&oacute; su maestria en Ilustraci&oacute;n de la universidad estatal del oeste de Connecticut  y su bachillerato en Ilustraci&oacute;n</font> <span class="style20">de Paier College of Art. </span></p>
+  <p align="left">&nbsp;</p>
+  <div align="center"><span class="style20">_______________________________________________________________________________________________________ </span> </div>
+  <p align="left">&nbsp;</p>
+  <p align="left"></p>
+  <h2 class="style20">Declaración Artística</h2>
+  <p class="style20">Para mí, el  papel es un material  fascinante  para crear   obras de arte. Me gusta hacer   esculturas de papel  que reflejan  alegría y ensueño. Cada pieza que hago, explora las posibilidades infinitas  que  el papel posee para  crear diseños sutiles  con diferentes tipos de textura. Mi objetivo  como artista,  es crear obras de arte que  saquen a relucir el niño que tos llevamos por dentro.</p>
+  <p class="style20">&nbsp;</p>
+  <div align="center"><span class="style20">_______________________________________________________________________________________________________ </span> </div>
+  <h2 class="style20"><font color="#9E7D84" size="5">Exhibiciones de grupo </font></h2>
+  <p class="style20"><strong><strong><strong><strong>›Art Hearts Fashion: New York Fashion Week</strong></strong>, </strong></strong> Orensanz Events, Lower Manhattan NYC, 2018</p>
+  <p class="style20"><strong><strong>›City-Wide Open Studios - </strong>Dwelling, </strong>The Goffe St. Armory, New Haven CT, 2015</p>
+  <p class="style20"><strong>›100@100:Off The Wall Fundraiser, </strong>The Gallery at The Visual &amp; Performing Arts Center, Danbury CT 2015</p>
+  <p class="style20"><strong>›Farm Winery Bistro Show, </strong>Charmard Vineyards, Clinton CT 2014</p>
+  <p class="style20"><strong>› ASC, Artist Supporting Community Exhibition, </strong>Hamden, CT 2013</p>
+  <p class="style20"><strong>› Illumination of Imagination,</strong> Six Summit Gallery, Ivoryton,CT 2012</p>
+  <p class="style20"><strong>› ASC, Artist Supporting Community Exhibition, </strong>New Haven, CT 2012</p>
+  <p class="style20"><strong>› ASC, Artist Supporting Community Exhibition, </strong>Hamden, CT 2011</p>
+  <p class="style20"><strong>›Illustration Art Show at Warwick Center for the Arts, </strong>Warwick RI, 2011<strong><br />
+  </strong></p>
+  <p class="style20"><strong>› Western Connecticut State University; Master of Fine Arts Thesis Exhibition Painting &amp; Illustration</strong>, Danbury,CT &amp;  NYC, 2010</p>
+  <p class="style20"><strong>›Underwater Theme Mural</strong>, <strong>Yale-New Haven Children’s Hospital Radiology Center,</strong> New Haven, CT 2008</p>
+  <p class="style20"><strong>› Long Wharf Gala an Illumination Affair</strong>, New Haven, CT 2007</p>
+  <p class="style20"><strong>› Art Space’s 10th Annual City-Wide Open Studios, </strong>New Haven, CT 2007</p>
+  <p class="style20"><strong>› Ely House Exhibition of Undergraduate College Artwork, </strong>New Haven, CT 2006</p>
+  <p class="style20"><strong>› Art Space’s 9th Annual City-Wide Open Studios,</strong> New Haven, CT 2006</p>
+  <p class="style20"><strong>› Paier College of Art; Student Art Show &amp; Sale, </strong>Hamden, CT 2003 – 2008</p>
+  <p class="style20">&nbsp;</p>
+  <div align="center"><span class="style20">_______________________________________________________________________________________________________ </span> </div>
+  <h2 class="style20"><font color="#9E7D84" size="5">Solo Shows</font></h2>
+  <p class="style20"><strong><strong>›Barbara Mansilla: Paper Sculpture &amp; Whimsical Design</strong>, </strong>The Mitchell Library Gallery; New Haven CT, 2015</p>
+  <p align="left" class="style14"></p>
+  </div>
+  <p>&nbsp;</p>
+  <table width="166" border="0" align="center">
+    <tr>
+      <td width="37"><a href="https://www.facebook.com/barbaramansilla.artist"><img src="images/FACEBOOKLOGO.jpg" alt="facebook" width="33" height="33" /></a></td>
+      <td width="37"><a href="https://www.instagram.com/barbaramansillaart/"><img src="images/Instagram.jpg" alt="instagram" width="36" height="35" /></a></td>
+      <td width="38"><a href="http://www.redbubble.com/people/barbaramansilla"><img src="images/redbubble.jpg" alt="redbubble" width="33" height="33" /></a></td>
+      <td width="38"><a href="https://barbaramansilla.wordpress.com/"><img src="images/wordpress-logos-300px-2.jpg" alt="wordpress" width="33" height="33" /></a></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+ 
+</div>
+    
+<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+  
+<!-- end #container -->
+</div>
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+</html>
