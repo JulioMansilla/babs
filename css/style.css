@@ -2,27 +2,40 @@
 .style14 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 a:link {
-	color: #9E7E81;
+	/*color: #9E7E81;*/
+	color: #664D4F;
 	text-decoration: none;
 }
 
-#hero{
-     width: 874px;
-	 height:567px;
-	 display: block;
-	 position: relative;
-	 margin:auto;
+a:hover {
+	text-decoration: none;
 }
 
-#slider{
-     width: 874px;
-	 height:567px;
-	 display: block;
-	 align: center;
-	 overflow:hidden;
+a:active {
+	text-decoration: none;
 }
 
+a:visited {
+	color: #664D4F;
+}
+
+#hero {
+	width: 874px;
+	height:567px;
+	display: block;
+	position: relative;
+	margin:auto;
+}
+
+#slider {
+	width: 874px;
+	height:567px;
+	display: block;
+	align: center;
+	overflow:hidden;
+}
 
 #info {    
 	width: 874px;
@@ -35,7 +48,7 @@ a:link {
 }
 
 #info h2 {
-    font-family:Georgia, "Times New Roman", Times, serif;
+	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: 20px;
 	font-weight: bold;
 	color:#FFFFFF;
@@ -43,7 +56,7 @@ a:link {
 }
 
 #info p {
-    font-family:Georgia, "Times New Roman", Times, serif;
+	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: 15px;
 	font-weight: lighter;
 	color:#FFFFFF;
@@ -51,8 +64,8 @@ a:link {
 	line-height: 1px;
 }
 
-#play{
-    width: 40px;
+#play {
+	width: 40px;
 	height:40px;
 	line-height: 40px;
 	text-align: center;
@@ -68,15 +81,11 @@ a:link {
 	z-index:999;
 }
 
-
-
-
-
-#pause{
-    width: 40px;
+#pause {
+	width: 40px;
 	height:40px;
 	line-height: 40px;
- 	text-align: center;
+	text-align: center;
 	display:block;
 	position:absolute;
 	border-radius: 20px;
@@ -88,10 +97,8 @@ a:link {
 	cursor: pointer;
 	z-index:999;
 }
-	  
-	  
-	  
-	  #next{
+
+#next {
 	width: 40px;
 	height:40px;
 	line-height: 40px;
@@ -105,94 +112,65 @@ a:link {
 	background: rgba(163, 48, 39, .2);
 	color:#FFFFFF;
 	cursor: pointer;
-	z-index:999;	  
-	  
-	  
-	  
-	  }
-	  
-	  
-	  
-	  
-	  #prev{
+	z-index:999;
+}
 
-      width: 40px;
-	  height:40px;
-	  line-height: 40px;
-	  text-align: center;
-	  display:block;
-	  position:absolute;
-	  border-radius: 20px;
-	  border: 1px solid #FFFFFF;
-	  top:0;
-	  right: 133px;
-	  background:rgba(163, 48, 39, .2);
-	  color:#FFFFFF;
-	  cursor: pointer;
-	  z-index:999;
-	  
-	  
-	  
-	  
-	  }
+#prev {
+	width: 40px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	display:block;
+	position:absolute;
+	border-radius: 20px;
+	border: 1px solid #FFFFFF;
+	top:0;
+	right: 133px;
+	background:rgba(163, 48, 39, .2);
+	color:#FFFFFF;
+	cursor: pointer;
+	z-index:999;
+}
 
 
-#pager{
+#pager {
+	width:100%;
+	text-align: center;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	z-index: 999;
+}
 
-
-       width:100%;
-	   text-align: center;
-	   display: block;
-	   position: absolute;
-	   cursor: pointer;
-	   z-index: 999;
-	   }
-	   
 #pager a  {
-      font-size: .0em;
-	  color: transparent;
-      width: 10px;
-	  height: 10px;
-	  display: inline-block;
-	  position: relative;
-	  border: 1px solid #FFFFFF;
-	  border-radius: 20px;
-	  background: transparent;
-	  margin: 10px;
-	  
+	font-size: .0em;
+	color: transparent;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid #FFFFFF;
+	border-radius: 20px;
+	background: transparent;
+	margin: 10px;
 }
 
-#pager a.activeSlide{ background:#FFFFFF;
-}
-a:link {
-	color: #664D4F;
-}
-a:visited {
-	color: #664D4F;
+#pager a.activeSlide {  
+	background:#FFFFFF;
 }
 
- 
 #body  {
 	font: 100% Verdana, Arial, Helvetica, sans-serif;
 	background:  #FFFFFF;
-	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
-	padding: 0;
-	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
-	color: #FFFFFF;
-	
+	margin: 0; 
+	text-align: center;
+	color: #FFFFFF;	
 }
 
-
-
-/* Tips for Elastic layouts 
-1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
-2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
-3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
-*/
 .twoColElsLtHdr #container {
-	width: 1000px;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	width: 1000px;  
 	background: #FFFFFF;
-	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	margin: 0 auto; 
 	border: 10px solid #BCA7A9;
 	border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -200,36 +178,28 @@ a:visited {
 	text-align: left;
 } 
 
-}
 .twoColElsLtHdr #header {
-	background: #FFFFFF;
-	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+background: #FFFFFF;
+padding: 0 10px;  
 } 
 .twoColElsLtHdr #header h1 {
-	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
-	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+margin: 0; 
+padding: 10px 0; 
 }
 
-/* Tips for sidebar1:
-1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
-2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
-3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsLtHdr #sidebar1 p" rule.
-*/
 .twoColElsLtHdr #sidebar1 {
 	float: left;
-	width: 12em; /* since this element is floated, a width must be given */
-	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
-	padding: 15px 0; /* top and bottom padding create visual space within this div */
+	width: 12em;
+	background: #FFFFFF; 
+	padding: 15px 0;
 }
 .twoColElsLtHdr #sidebar1 h3, .twoColElsLtHdr #sidebar1 p {
-	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-left: 10px; 
 	margin-right: 10px;
 }
 
-
 .twoColElsLtHdr #mainContent {
 	margin: 0 auto;
-	/* the right margin can be given in ems or pixels. It creates the space down the right side of the page. */
 	width: 900px;
 	align:center;
 	padding-left: 0px;
@@ -237,30 +207,29 @@ a:visited {
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
-	}
+}
 .twoColElsLtHdr #footer { 
-	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	padding: 0 10px; 
 	background:#DDDDDD;
 } 
 .twoColElsLtHdr #footer p {
-	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
-	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	margin: 0;
+	padding: 10px 0; 
 }
 
-/* Miscellaneous classes for reuse */
-.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+.fltrt {
 	float: right;
 	margin-left: 8px;
 }
-.fltlft { /* this class can be used to float an element left in your page */
+.fltlft {
 	float: left;
 	margin-right: 8px;
 }
-.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+.clearfloat { 
 	clear:both;
-    height:0;
-    font-size: 1px;
-    line-height: 0px;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
 }
 .style26 {
 	font-size: 18px;
