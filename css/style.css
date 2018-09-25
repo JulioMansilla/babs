@@ -1,10 +1,4 @@
-/*css for index.html*/
-.style14 {
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-
 a:link {
-	/*color: #9E7E81;*/
 	color: #664D4F;
 	text-decoration: none;
 }
@@ -235,4 +229,35 @@ padding: 10px 0;
 	font-size: 18px;
 	font-style: italic;
 	font-weight: bold;
+}
+.style11 {
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	color: #9E7E81; 
+}
+.style14 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style16 {
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	color: #BCA7A9; 
+}
+.style17 {
+	color: #541132
+}
+
+.style19 {
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	color: #664D4F; 
+}
+.style20 {
+	color: #A07D83;
+}
+.style25 {
+	color: #A07D83; 
+	font-style: italic; 
+}
+.style26 {
+	color: #A07D83;
+	font-weight: bold;
+	font-style: italic;
 }
