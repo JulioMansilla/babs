@@ -143,12 +143,14 @@ a:visited {
 	height: 10px;
 	display: inline-block;
 	position: relative;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #CC99CC;
 	border-radius: 20px;
 	background: transparent;
 	margin: 10px;
 }
-
+#pager a.activeSlide2{ 
+	background:#CC99CC;
+}
 #pager a.activeSlide {  
 	background:#FFFFFF;
 }
@@ -260,4 +262,7 @@ padding: 10px 0;
 	color: #A07D83;
 	font-weight: bold;
 	font-style: italic;
+}
+.bump {
+	padding: 0 0 0 25px !important;
 }
