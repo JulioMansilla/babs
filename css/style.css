@@ -266,3 +266,15 @@ padding: 10px 0;
 .bump {
 	padding: 0 0 0 25px !important;
 }
+
+.carousel-h3 {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.carousel-control-custom {
+	color: white;
+}
+
+.carousel-indicators {
+	background-color: rgba(0,0,0,0.3);
+}
