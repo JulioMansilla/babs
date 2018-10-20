@@ -117,41 +117,41 @@ $(function(){
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <div class="item">
-        <img class="carousel-img" src="jqueryimages/sketch1.jpg"  width="874" height="567" />
+        <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch1.jpg"  width="874" height="567" />
       </div>
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch2.jpg"  width="874" height="567" />
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch2.jpg"  width="874" height="567" />
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/rat.jpg"  width="874" height="567" />
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/rat.jpg"  width="874" height="567" />
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch4.jpg"  width="874" height="567" />
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch4.jpg"  width="874" height="567" />
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch5.jpg" width="874" height="567">
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch5.jpg" width="874" height="567">
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch6.jpg" width="874" height="567">
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch6.jpg" width="874" height="567">
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch7 copy.jpg" width="874" height="567">
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch7 copy.jpg" width="874" height="567">
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch8.jpg" width="874" height="567">
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch8.jpg" width="874" height="567">
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch9.jpg" width="874" height="567">
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch9.jpg" width="874" height="567">
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch10.jpg" width="874" height="567">
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch10.jpg" width="874" height="567">
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch11 copy.jpg" width="874" height="567">
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch11 copy.jpg" width="874" height="567">
     </div>
     <div class="item">
-      <img class="carousel-img" src="jqueryimages/sketch12.jpg" width="874" height="567">
+      <img class="carousel-img" data-toggle="modal" data-target="#pictureModal" src="jqueryimages/sketch12.jpg" width="874" height="567">
     </div>
   </div>
   <!-- Left and right controls -->
@@ -224,5 +224,9 @@ var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenu
 <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
   
 <!-- end #container --></div>
+<div class="modal" id="pictureModal"  tabindex="-1" role="dialog">
+  <img class="img-fluid" id="modalImage" src="" />
+</div>
+<script type="text/javascript" src="Scripts/pictureModal.js"></script>
 </body>
 </html>

@@ -278,3 +278,9 @@ padding: 10px 0;
 .carousel-indicators {
 	background-color: rgba(0,0,0,0.3);
 }
+
+.img-fluid {
+	background: none !important;
+	width: 100% !important;
+	height: auto !important;
+}
